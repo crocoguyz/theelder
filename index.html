@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Elder</title>
+    <style>
+        /* Set the background image and make it cover the entire page */
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('background.jpg'); /* Replace with your image URL */
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        /* Center the content vertically and horizontally */
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.6); /* Optional overlay for readability */
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.5em;
+            margin-bottom: 40px;
+        }
+
+        /* Style for the button container to align them horizontally */
+        .button-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap; /* Wrap the buttons if the screen is too narrow */
+        }
+
+        /* Style for individual download sections */
+        .download-section {
+            margin: 20px;
+            text-align: center;
+        }
+
+        /* Style the download buttons */
+        .download-btn {
+            padding: 15px 30px;
+            font-size: 1.2em;
+            color: white;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            margin-top: 10px;
+            min-width: 150px;
+            display: block;
+        }
+
+        .download-btn:hover {
+            background-color: #0056b3;
+        }
+
+        /* Style for the images */
+        .app-image {
+            max-width: 100px; /* Set the size of the images */
+            height: auto;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>The Five Elder</h1>
+        <p>We Don't Let You Rule Nothing</p> <!-- Describe your app here -->
+
+        <!-- Horizontal list of app download options with images -->
+        <div class="button-container">
+            <!-- Android Section -->
+            <div class="download-section">
+                <img src="1.jpg" alt="Android Logo" class="app-image"> <!-- Replace with Android image -->
+                <a href="android_download_link" class="download-btn">Android</a> <!-- Replace with Android app link -->
+            </div>
+
+            <!-- iOS Section -->
+            <div class="download-section">
+                <img src="2.jpg" alt="iOS Logo" class="app-image"> <!-- Replace with iOS image -->
+                <a href="ios_download_link" class="download-btn">iOS</a> <!-- Replace with iOS app link -->
+            </div>
+
+            <!-- Windows Section -->
+            <div class="download-section">
+                <img src="3.jpg" alt="Windows Logo" class="app-image"> <!-- Replace with Windows image -->
+                <a href="window.zip" class="download-btn">Windows</a> <!-- Replace with Windows app link -->
+            </div>
+
+            <!-- Mac Section -->
+            <div class="download-section">
+                <img src="4.jpg" alt="Mac Logo" class="app-image"> <!-- Replace with Mac image -->
+                <a href="mac.zip" class="download-btn">Mac</a> <!-- Replace with Mac app link -->
+            </div>
+
+            <!-- Linux Section -->
+            <div class="download-section">
+                <img src="5.jpg" alt="Linux Logo" class="app-image"> <!-- Replace with Linux image -->
+                <a href="linux_download_link" class="download-btn">Linux</a> <!-- Replace with Linux app link -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
